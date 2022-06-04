@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		75BDF14C284B62390003D689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF14B284B62390003D689 /* AppDelegate.swift */; };
 		75BDF14E284B62390003D689 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF14D284B62390003D689 /* SceneDelegate.swift */; };
-		75BDF150284B62390003D689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF14F284B62390003D689 /* ViewController.swift */; };
-		75BDF153284B62390003D689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BDF151284B62390003D689 /* Main.storyboard */; };
+		75BDF150284B62390003D689 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF14F284B62390003D689 /* RootViewController.swift */; };
 		75BDF155284B623D0003D689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75BDF154284B623D0003D689 /* Assets.xcassets */; };
 		75BDF158284B623D0003D689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75BDF156284B623D0003D689 /* LaunchScreen.storyboard */; };
 		75BDF163284B623D0003D689 /* SobokanSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF162284B623D0003D689 /* SobokanSolverTests.swift */; };
 		75BDF16D284B623D0003D689 /* SobokanSolverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF16C284B623D0003D689 /* SobokanSolverUITests.swift */; };
 		75BDF16F284B623D0003D689 /* SobokanSolverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF16E284B623D0003D689 /* SobokanSolverUITestsLaunchTests.swift */; };
+		75BDF17D284B63920003D689 /* SobokanSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BDF17C284B63920003D689 /* SobokanSolver.swift */; };
+		75BDF180284B63C60003D689 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF17F284B63C60003D689 /* Algorithms */; };
+		75BDF183284B64930003D689 /* CMiniSat in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF182284B64930003D689 /* CMiniSat */; };
+		75BDF185284B64940003D689 /* CPicoSAT in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF184284B64930003D689 /* CPicoSAT */; };
+		75BDF187284B64940003D689 /* CryptoMiniSat in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF186284B64940003D689 /* CryptoMiniSat */; };
+		75BDF189284B64940003D689 /* MiniSat in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF188284B64940003D689 /* MiniSat */; };
+		75BDF18B284B64940003D689 /* PicoSAT in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF18A284B64940003D689 /* PicoSAT */; };
+		75BDF18D284B64940003D689 /* SATSolver in Frameworks */ = {isa = PBXBuildFile; productRef = 75BDF18C284B64940003D689 /* SATSolver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +46,7 @@
 		75BDF148284B62390003D689 /* SobokanSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SobokanSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BDF14B284B62390003D689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75BDF14D284B62390003D689 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		75BDF14F284B62390003D689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75BDF152284B62390003D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75BDF14F284B62390003D689 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		75BDF154284B623D0003D689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75BDF157284B623D0003D689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75BDF159284B623D0003D689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 		75BDF168284B623D0003D689 /* SobokanSolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SobokanSolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75BDF16C284B623D0003D689 /* SobokanSolverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobokanSolverUITests.swift; sourceTree = "<group>"; };
 		75BDF16E284B623D0003D689 /* SobokanSolverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobokanSolverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		75BDF17C284B63920003D689 /* SobokanSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobokanSolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BDF18B284B64940003D689 /* PicoSAT in Frameworks */,
+				75BDF189284B64940003D689 /* MiniSat in Frameworks */,
+				75BDF183284B64930003D689 /* CMiniSat in Frameworks */,
+				75BDF180284B63C60003D689 /* Algorithms in Frameworks */,
+				75BDF18D284B64940003D689 /* SATSolver in Frameworks */,
+				75BDF185284B64940003D689 /* CPicoSAT in Frameworks */,
+				75BDF187284B64940003D689 /* CryptoMiniSat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,10 +113,10 @@
 		75BDF14A284B62390003D689 /* SobokanSolver */ = {
 			isa = PBXGroup;
 			children = (
+				75BDF17B284B637E0003D689 /* Library */,
 				75BDF14B284B62390003D689 /* AppDelegate.swift */,
 				75BDF14D284B62390003D689 /* SceneDelegate.swift */,
-				75BDF14F284B62390003D689 /* ViewController.swift */,
-				75BDF151284B62390003D689 /* Main.storyboard */,
+				75BDF14F284B62390003D689 /* RootViewController.swift */,
 				75BDF154284B623D0003D689 /* Assets.xcassets */,
 				75BDF156284B623D0003D689 /* LaunchScreen.storyboard */,
 				75BDF159284B623D0003D689 /* Info.plist */,
@@ -127,6 +141,14 @@
 			path = SobokanSolverUITests;
 			sourceTree = "<group>";
 		};
+		75BDF17B284B637E0003D689 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				75BDF17C284B63920003D689 /* SobokanSolver.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +165,15 @@
 			dependencies = (
 			);
 			name = SobokanSolver;
+			packageProductDependencies = (
+				75BDF17F284B63C60003D689 /* Algorithms */,
+				75BDF182284B64930003D689 /* CMiniSat */,
+				75BDF184284B64930003D689 /* CPicoSAT */,
+				75BDF186284B64940003D689 /* CryptoMiniSat */,
+				75BDF188284B64940003D689 /* MiniSat */,
+				75BDF18A284B64940003D689 /* PicoSAT */,
+				75BDF18C284B64940003D689 /* SATSolver */,
+			);
 			productName = SobokanSolver;
 			productReference = 75BDF148284B62390003D689 /* SobokanSolver.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +246,10 @@
 				Base,
 			);
 			mainGroup = 75BDF13F284B62390003D689;
+			packageReferences = (
+				75BDF17E284B63C60003D689 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+				75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */,
+			);
 			productRefGroup = 75BDF149284B62390003D689 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +268,6 @@
 			files = (
 				75BDF158284B623D0003D689 /* LaunchScreen.storyboard in Resources */,
 				75BDF155284B623D0003D689 /* Assets.xcassets in Resources */,
-				75BDF153284B62390003D689 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +292,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75BDF150284B62390003D689 /* ViewController.swift in Sources */,
+				75BDF150284B62390003D689 /* RootViewController.swift in Sources */,
 				75BDF14C284B62390003D689 /* AppDelegate.swift in Sources */,
+				75BDF17D284B63920003D689 /* SobokanSolver.swift in Sources */,
 				75BDF14E284B62390003D689 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +332,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		75BDF151284B62390003D689 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75BDF152284B62390003D689 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75BDF156284B623D0003D689 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +471,6 @@
 				INFOPLIST_FILE = SobokanSolver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +498,6 @@
 				INFOPLIST_FILE = SobokanSolver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -604,6 +629,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75BDF17E284B63C60003D689 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ltentrup/SATSolver.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75BDF17F284B63C60003D689 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF17E284B63C60003D689 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+		75BDF182284B64930003D689 /* CMiniSat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = CMiniSat;
+		};
+		75BDF184284B64930003D689 /* CPicoSAT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = CPicoSAT;
+		};
+		75BDF186284B64940003D689 /* CryptoMiniSat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = CryptoMiniSat;
+		};
+		75BDF188284B64940003D689 /* MiniSat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = MiniSat;
+		};
+		75BDF18A284B64940003D689 /* PicoSAT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = PicoSAT;
+		};
+		75BDF18C284B64940003D689 /* SATSolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BDF181284B64930003D689 /* XCRemoteSwiftPackageReference "SATSolver" */;
+			productName = SATSolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75BDF140284B62390003D689 /* Project object */;
 }
